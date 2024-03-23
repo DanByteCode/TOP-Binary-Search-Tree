@@ -1,6 +1,7 @@
 import { Node } from "./node-tree.js";
 export function Tree(array = []) {
     let root = null
+    const getRoot = ()=>{return root}
     buildTree(array)
 
     function buildTree(array) {
@@ -167,6 +168,7 @@ export function Tree(array = []) {
     }
     return {
         root,
+        getRoot,
         buildTree,
         insert,
         deleteItem,
