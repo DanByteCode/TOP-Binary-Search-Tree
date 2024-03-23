@@ -10,10 +10,10 @@ export const prettyPrint = (node, prefix = "", isLeft = true) => {
       prettyPrint(node.left, `${prefix}${isLeft ? "    " : "│   "}`, true);
     }
   }
-  export const generateArray = (num) => {
+  export const generateArray = (num, start, end) => {
     const res = []
     for (let i = 0; i < num; i++) {
-        res.push(Math.random * 1000) 
+        res.push(start + Math.floor(Math.random() * end)) 
       }
     return res
   }
