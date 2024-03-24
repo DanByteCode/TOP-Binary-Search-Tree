@@ -3,7 +3,7 @@ This is a node-based data structure in which each entry can be connected to a pa
 This structure will add numbers in an orderly way.
 ## Functions
 - `Tree(array)` when creating a new tree it can be initialized with an array of data and turns it into a balanced binary tree full of Node objects appropriately placed.
-- `root` the main Node.
+- `getRoot()` return the main node.
 - `buildTree(array)` takes an array to replace the current tree.
 - `insert(value)` insert a number into its respective node if it is not repeated.
 - `deleteItem(value)` reorders the tree to remove the node that has the parameter value.

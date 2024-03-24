@@ -2,7 +2,7 @@ import { Tree } from "./tree.js";
 import { prettyPrint } from "./BST-Utils.js";
 const tree = new Tree([1, 7, 4, 23, 8, 9, 4, 3, 5, 7, 9, 67, 6345, 324]) 
 console.log("---INITIAL TREE---");
-prettyPrint(tree.root)
+prettyPrint(tree.getRoot())
 tree.insert(20)
 tree.insert(200)
 tree.insert(50)
@@ -11,7 +11,7 @@ tree.deleteItem(23)
 tree.deleteItem(8)
 console.log("Inserting: 20, 200, 50");
 console.log("Deleting: 30, 23, 8");
-prettyPrint(tree.root)
+prettyPrint(tree.getRoot())
 console.log("Find '5': "+ JSON.stringify(tree.find(5)))
 console.log("Find '67': "+ tree.find(67))
 console.log("Level Order: "+ tree.levelOrder())
